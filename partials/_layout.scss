@@ -35,16 +35,18 @@
   min-height: 80vh;
   
   display: flex;
+  flex-wrap: wrap;
   flex-direction:column ;
   align-items: center;
   justify-content: center;
   padding: 14px;
+  gap: 20px;
 
   h1{
     text-align: center;
-    line-height: 150%;
-    max-width: 940px;
-    font-size: 46px;
+    line-height: 100%;
+    max-width: 100%;
+    font-size: 34px;
   }
 
   p{
@@ -120,7 +122,8 @@ to{
     padding: 34px 14px 64px 14px;
 
     img{
-        max-width: 570px;
+        max-width: 100%;
+        height: auto;
 
     }
 }
@@ -183,6 +186,7 @@ to{
 
 .servicos{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 14px;
@@ -192,6 +196,8 @@ to{
 .servico{
     flex: 1;
     display: flex;
+    width: 100%;
+    flex-wrap: wrap;
     flex-direction:column;
     background-color: $white-normal;
     border-radius: 8px;
@@ -232,10 +238,12 @@ to{
 @media screen and (max-width: 768px) {
     .servicos{
         flex-direction: column;
+        padding: 20px;
     }
 
     .servicos img{
         max-width: 540px;
+
     }
 }
 
@@ -254,6 +262,7 @@ to{
 
 .formulario-content {
     text-align: center;
+    flex-wrap: wrap;
 }
 
 .formulario-content h2 {
@@ -323,6 +332,7 @@ button:hover {
 
 .footer{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -349,6 +359,7 @@ button:hover {
 
     img{
         max-width: 74px;
+        flex-wrap: wrap;
         transition: transform 0.4s;
     }
 
