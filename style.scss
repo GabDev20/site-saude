@@ -16,6 +16,10 @@
         position: relative;
 
         background-color: $green-dark;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
     }
 
     button{
@@ -37,7 +41,12 @@
         text-decoration: none;
     }
 
-    html{
+    html, body{
         scroll-behavior: smooth;
         overflow-x: hidden;
-    }
+        
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    

@@ -1,5 +1,10 @@
 .container{
     max-width: 1440px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
     padding: 0 8px;
 }
@@ -22,7 +27,8 @@
     z-index: -1;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50% 0;
+    background-position: center;
+    background-attachment: fixed;
     opacity: 0.9;
 }
 

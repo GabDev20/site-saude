@@ -80,6 +80,11 @@ i {
 }
 .container {
   max-width: 1440px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
   padding: 0 8px;
 }
@@ -100,7 +105,8 @@ i {
   z-index: -1;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50% 0;
+  background-position: center;
+  background-attachment: fixed;
   opacity: 0.9;
 }
 
@@ -421,6 +427,9 @@ body {
   height: 100vh;
   position: relative;
   background-color: #2a4d3f;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 button {
@@ -441,7 +450,10 @@ a {
   text-decoration: none;
 }
 
-html {
+html, body {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }/*# sourceMappingURL=style.css.map */
