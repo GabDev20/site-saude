@@ -1,10 +1,5 @@
 .container{
-    max-width: 1440px;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    max-width: 1080px;
     margin: 0 auto;
     padding: 0 8px;
 }
@@ -28,7 +23,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
     opacity: 0.9;
 }
 
@@ -53,6 +47,7 @@
     line-height: 100%;
     max-width: 100%;
     font-size: 34px;
+    padding: 0;
   }
 
   p{
@@ -95,6 +90,8 @@ to{
             font-size: 34px;
             padding: 0 14px;
             width: 100%;
+            display: flex;
+            justify-content: center;
         }
 
         p{
