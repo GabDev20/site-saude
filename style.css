@@ -118,12 +118,13 @@ i {
 .hero h1 {
   text-align: center;
   line-height: 100%;
-  max-width: 100%;
-  font-size: 34px;
+  max-width: 80%;
+  font-size: 26px;
   padding: 0;
 }
 .hero p {
   text-align: center;
+  padding: 0;
   margin: 14px 0;
 }
 
@@ -135,6 +136,7 @@ i {
   font-size: 18px;
   font-weight: 600;
   margin: 14px 0;
+  align-items: center;
 }
 
 .button-contact:hover {
