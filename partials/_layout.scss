@@ -1,5 +1,5 @@
 .container{
-    max-width: 1080px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 8px;
 }
@@ -33,28 +33,27 @@
 .hero{
   color: $white-normal;
   min-height: 80vh;
-  
+  height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction:column ;
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 100vh;
-  width: 100%;
-  padding: 14px;
+  padding: 20px;
   gap: 20px;
+  box-sizing: border-box;
 
   h1{
-    text-align: center;
-    line-height: 1.4;
-    max-width: 100%;
-    font-size: 24px;
+    font-size: 28px;
+    max-width: 90%;
     margin: 10px 0;
+    line-height: 1.4;
   }
 
   p{
-    text-align: center;
-    padding: 0;
+    font-size: 18px;
+    max-width: 85%;
     margin: 10px 0;
   }
 
@@ -91,23 +90,23 @@ to{
 
 @media screen and (max-width: 768px){
     .hero{
-        min-width: 60vh;
+        min-height: 100vh;
+        padding: 10px;
 
         h1{
-            font-size: 34px;
+            font-size: 22px;
+            max-width: 90%;
             padding: 0 14px;
-            width: 100%;
-            display: flex;
-            justify-content: center;
         }
 
         p{
-            font-size: 14px;
+            font-size: 16px;
+            max-width: 85%;
         }
     }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 768px){
     .hero h1{
         font-size: 24px;
     }
@@ -156,7 +155,7 @@ to{
 
 
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
     .about-content{
         flex-direction: column;
     }
@@ -398,7 +397,7 @@ button:hover {
     opacity: 1;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     .btn-whatsapp{
         img{
             max-width: 64px;
