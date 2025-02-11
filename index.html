@@ -80,7 +80,24 @@
                 </div>
             </nav>
 
-            <main class="hero container" data-aos="fade-up" data-aos-delay="400">
+            <nav class="navbar">
+                <div class="container">
+                    <a href="#" class="logo">
+                        <img src="assets/logo3.svg" alt="Logo">
+                    </a>
+                    <ul class="nav-links">
+                        <li><a href="#hero">Início</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="https://wa.me/5561994497474" target="_blank" class="contato-link">
+                            Contato
+                        </a></li>
+                    </ul>
+                    <div class="menu-toggle">&#9776;</div>
+                </div>
+            </nav>
+
+            <main  id="hero"  class="hero container" data-aos="fade-up" data-aos-delay="400">
                 <h1>A Medicina do Trabalho é fundamental para garantir a saúde e o bem-estar dos colaboradores, promovendo um ambiente seguro, produtivo e em conformidade com a legislação. </h1>
             <p>Horário de funcionamento: 8:00 - 18:00 </p>
             <a href="https://api.whatsapp.com/send/?phone=5561994497474&text=Quero%20fazer%20um%20agendamento." class="button-contact" target="_blank">
@@ -93,9 +110,9 @@
      </div>
 
      <!-- ABOUT -->
-     <section class="about">
+     <section  id="about"  class="about">
         <div class="container about-content">
-            <div data-aos="zoom-in" data-aos-delay="100">
+            <div data-aos="zoom-in-up" data-aos-delay="100">
                 <img 
                 src="assets/sobre.svg" 
                 alt="ASO's"
@@ -113,7 +130,7 @@
 
      <!-- SERVICES-->
 
-<section class="services">
+<section  id="services"  class="services">
     <div class="services-content container">
         <h2>Serviços</h2>
         <p>​A CDF é especializada em promover a saúde e bem-estar dos trabalhadores, oferecendo um conjunto integrado de serviços que envolvem a atuação de médicos do trabalho, psicólogos e fonoaudiólogos. Cada um desses profissionais desempenha um papel vital na prevenção de doenças e na promoção da saúde no ambiente laboral. </p>
@@ -129,7 +146,7 @@
             <div class="servico-info">
                 <strong>ASO's</strong>
                 <a href="#formulario">
-                <button>
+                <button onclick="window.location.href='servicos.html'" >
                     Saiba mais
                 </button>
                 </a>
@@ -144,7 +161,7 @@
             <div class="servico-info">
                 <strong>Consultoria de SST</strong>
                 <a href="#formulario">
-                <button>
+                <button onclick="window.location.href='servicos.html'">
                     Saiba mais
                 </button>
                 </a>
@@ -160,7 +177,7 @@
                 <a href="#formulario">
                 <button>
                     Saiba mais
-                </button>
+                </button onclick="window.location.href='servicos.html'">
                 </a>
             </div>
         </div>
@@ -173,7 +190,7 @@
             <div class="servico-info">
                 <strong>eSOCIAL</strong>
                 <a href="#formulario">
-                <button>
+                <button onclick="window.location.href='servicos.html'">
                     Saiba mais
                 </button>
                 </a>
@@ -188,7 +205,7 @@
             <div class="servico-info">
                 <strong>Homologação de Atestado Médico</strong>
                 <a href="#formulario">
-                <button>
+                <button onclick="window.location.href='servicos.html'">
                     Saiba mais
                 </button>
                 </a>
@@ -202,7 +219,7 @@
             <div class="servico-info">
                 <strong>Psicotécnico / Avaliação Física</strong>
                 <a href="#formulario">
-                <button>
+                <button onclick="window.location.href='servicos.html'">
                     Saiba mais
                 </button>
                 </a>
@@ -214,52 +231,125 @@
     </section>
 </section>
 
-<!-- FORMULÁRIO -->
-<section id="formulario" class="formulario" data-aos="fade-left" data-aos-delay="400">
-    <div class="formulario-content container">
-        <h2>Entre em Contato</h2>
-        <p>Preencha o formulário abaixo para solicitar mais informações sobre nossos serviços ou tirar suas dúvidas.</p>
-
-        <!-- Início do Formulário -->
-        <form action="submit.php" method="POST" class="form">
-            <div class="form-group">
-                <label for="nome">Nome</label>
-                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required />
+<!--BANNER2-->
+<section class="banner2">
+    <div class="container">
+        <div class="banner2-content" 
+        data-aos="zoom-in-up" data-aos-delay="100">
+            <!-- 🔹 Imagem à esquerda -->
+            <div class="banner2-image">
+                <img src="assets/Segurança e medicina do trabalho.svg" alt="banner2">
             </div>
 
-            <div class="form-group">
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required />
+            <!-- 🔹 Texto à direita -->
+            <div class="banner2-text">
+                <span>Garanta a segurança e a saúde no trabalho!</span>
+                <h1>Conte com a <strong>CDF Clinica Dr. Ferreira</strong></h1>
+                <h3>Para manter sua empresa em conformidade com as normas e proteger seus colaboradores.</h3>
+            <a href="https://api.whatsapp.com/send/?phone=5561994497474&text=Quero%20fazer%20um%20agendamento." target="_blank" rel="noopener no-referrer" class="button-contact">Solicitar orçamento</a>
             </div>
-
-            <div class="form-group">
-                <label for="telefone">Telefone</label>
-                <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx" required />
-            </div>
-
-            <div class="form-group">
-                <label for="mensagem">Mensagem</label>
-                <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" rows="4" required></textarea>
-            </div>
-
-            <button type="submit">Enviar</button>
-        </form>
-        <!-- Fim do Formulário -->
+        </div>
     </div>
 </section>
 
 
+<!--DIFERENCIAL-->
+<section class="diferencial">
+    <div class="container">
+        <div class="diferencial-content">
+            <!-- 🔹 Texto à esquerda -->
+            <div class="diferencial-texto">
+                <h2>Por que nos escolher?</h2>
+                <p>Somos referência em segurança e medicina do trabalho, oferecendo soluções completas para sua empresa estar sempre em conformidade com as normas regulamentadoras.</p>
+            </div>
+
+            <!-- 🔹 Blocos de diferenciais à direita -->
+            <div class="diferencial-lista">
+                <h2>Nossos diferenciais</h2>
+                <div class="diferencial-item">
+                    <img src="assets/experiencia.svg" alt="Ícone de experiência">
+                    <h3>+10 anos de experiência</h3>
+                    <p>Atuamos há mais de uma década, garantindo segurança e saúde ocupacional.</p>
+                </div>
+
+                <div class="diferencial-item">
+                    <img src="assets/equipe.svg" alt="Ícone de equipe especializada">
+                    <h3>Equipe Especializada</h3>
+                    <p>Profissionais qualificados em segurança e saúde do trabalho.</p>
+                </div>
+
+                <div class="diferencial-item">
+                    <img src="assets/1 lugar.svg" alt="Ícone de tecnologia">
+                    <h3>Qualidade em 1° Lugar</h3>
+                    <p>A verdadeira excelência está em oferecer qualidade em primeiro lugar , garantindo segurança, eficiência e satisfação em cada detalhe.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+ 
+<!--FIM DO DIFERENCIAL-->
+
+<!-- Mapa com Borda -->
+<section class="map-container">
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.0988792500507!2d-47.8936127!3d-15.798739399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a2f5b36817769%3A0xf1071c731d9f66e5!2sCDF%20-%20Seguran%C3%A7a%20e%20Medicina%20do%20Trabalho!5e0!3m2!1spt-BR!2sbr!4v1738087750532!5m2!1spt-BR!2sbr"
+        width="100%" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</section>
+<!--fim do map-->
+
+ <!--forms e contato-->
+
+ <section class="contato-form">
+    <div class="container">
+        <div class="contato-content">
+            
+            <!-- 🔹 Formulário à esquerda -->
+            <div class="contato-formulario">
+                <h2>Entre em Contato</h2>
+                <form id="formulario" onsubmit="enviarParaWhatsApp(event)">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+
+            <!-- 🔹 Seção de Contato ao meio -->
+            <div class="contato-info">
+                <h2>Informações de Contato</h2>
+                <p><i class="fa-solid fa-phone"></i> (61) 99449-7474 / 3968-6900 </p>
+                <p><i class="fa-solid fa-envelope"></i> comercial@cdfsaude.com.br</p>
+                <p><i class="fa-solid fa-location-dot"></i> SRTVS 701, Cj, L Torre 02 Loja 36 Asa Sul, Brasília-DF, 70340-906</p>
+                <p><i class="fa-brands fa-whatsapp"></i> 
+                    <a href="https://wa.me/5561994497474" target="_blank">Chamar no WhatsApp</a>
+                </p>
+            </div>
+
+            <!-- 🔹 Logo à direita -->
+            <div class="contato-logo">
+                <img src="assets/logo2.svg" alt="Logo da CDF Saúde">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+ 
 <!--FOOTER-->
-
-<div class="servicos">
-    <h2>Venha Conhecer</h2>
-</div>
-
-<iframe 
-width="100%"
-<iframe 
-
-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.0988792500507!2d-47.8936127!3d-15.798739399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a2f5b36817769%3A0xf1071c731d9f66e5!2sCDF%20-%20Seguran%C3%A7a%20e%20Medicina%20do%20Trabalho!5e0!3m2!1spt-BR!2sbr!4v1738087750532!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 <footer class="footer">
     <div class="footer-icons">
@@ -268,15 +358,14 @@ src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.0988792500507!2d
         </a>
       </div>
 
-      <div>
-        <img 
-        src="assets/logo2.svg" 
-        alt="Logo clinica">
-      </div>
-
-      <p>Copyright 2025 | Dev CDF Clinica. Dr.Ferreira - todos direitos reservados.</p>
-      <p>Telefone: 3968-6900</p>
-      <p>Email: comercial@cdfsaude.com.br</p>
+      <div class="col-lg-12" id="footer-2">
+      <p class="text-center">
+        "CDF Clinica. Dr.Ferreira | "
+    <a href="https://wa.me/5561994497474" target="_blank" rel="noopener no-referrer" title="entrar em contato com o desenvolvedor">Desenvolvido 
+        por Gabriel BArbosa</a>
+    " | Copyright © 2025 - Todos os direitos reservados"
+    </p>
+     </div>
 </footer>
 
 <!--Button Whatsapp-->
