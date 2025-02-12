@@ -48,10 +48,12 @@
 .logo {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .logo img{
-    height: 50px;
+    width: 150px;
+    max-height: 60px;
 }
 
 .nav-links {
@@ -137,6 +139,12 @@
     .nav-links.active {
         display: flex;
         
+    }
+
+    .logo img{
+        width: 200;
+        justify-content: center;
+
     }
 
     .menu-toggle {
@@ -728,7 +736,7 @@ to{
 
 //FOOTER--------------------
 
-.footer{
+.col-lg-12{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -743,7 +751,7 @@ to{
 .footer-icons{
     display: flex;
     gap: 14px;
-    color: $white-normal;
+    color: $black-dark;
 }
 
 //------------------
