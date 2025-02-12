@@ -77,15 +77,50 @@
     margin-top: -70px;
 }
 
-/* Ícone do menu para mobile */
+
 .menu-toggle {
     display: none;
-    font-size: 28px;
+    font-size: 24px;
     color: $black-normal;
     cursor: pointer;
+    position: relative;
+    top: -100px;
+    z-index: 1000;
 }
 
-/* Ajuste para telas menores */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: left 0.3s ease; 
+}
+
+.sidebar a {
+    color: #fff; 
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 18px;
+    transition: color 0.2s ease;
+}
+
+.sidebar a:hover {
+    color: #f0a500; 
+}
+
+
+.sidebar.active {
+    left: 0; 
+}
+
+
+
 @media screen and (max-width: 768px) {
     .nav-links {
         display: none;
@@ -95,7 +130,7 @@
         left: 0;
         width: 100%;
         background: rgba(0, 0, 0, 0.9);
-        padding: 10px 0;
+        padding: 5px 0;
         text-align: center;
     }
 
@@ -106,6 +141,7 @@
 
     .menu-toggle {
         display: block;
+        top: -25px;
     }
 }
 
@@ -177,13 +213,13 @@ to{
         padding: 20px;
 
         h1{
-            font-size: 24px;
-            max-width: 90%;
+            font-size: 12px;
+            max-width: 100%;
             padding: 0 14px;
         }
 
         p{
-            font-size: 16px;
+            font-size: 12px;
             max-width: 90%;
         }
     }
@@ -191,7 +227,7 @@ to{
 
 @media screen and (max-width: 768px){
     .hero h1{
-        font-size: 24px;
+        font-size: 16px;
     }
     
 }
