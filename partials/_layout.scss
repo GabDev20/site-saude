@@ -220,6 +220,9 @@ to{
         text-align: center;
         min-height: 100vh;
         padding: 20px;
+        top: 70px;
+        top: -40px;
+       
 
         h1{
             font-size: 12px;
@@ -237,6 +240,8 @@ to{
 @media screen and (max-width: 768px){
     .hero h1{
         font-size: 16px;
+        
+
     }
     
 }
