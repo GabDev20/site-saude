@@ -95,7 +95,7 @@ i {
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 90%;
   z-index: -1;
   background-size: cover;
   background-repeat: no-repeat;
@@ -229,6 +229,7 @@ i {
   padding: 20px 10%;
   gap: 20px;
   box-sizing: border-box;
+  top: -280px;
 }
 .hero h1 {
   font-size: 32px;
@@ -293,6 +294,7 @@ i {
   background-color: #2a4d2f;
   overflow: hidden;
   color: #fff;
+  top: -50px;
 }
 
 .about-content {
@@ -305,6 +307,7 @@ i {
 .about-content img {
   max-width: 100%;
   height: auto;
+  top: -100px;
 }
 
 .about-content div {
