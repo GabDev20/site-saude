@@ -39,3 +39,21 @@ document.addEventListener('click', (event) => {
 });
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const slides = document.querySelectorAll(".carousel-slide");
+    const container = document.querySelector(".carousel-container");
+    let index = 0;
+  
+    function nextSlide() {
+      index++;
+      if (index >= slides.length) {
+        index = 0;
+      }
+      container.style.transform = `translateX(-${index * 100}%)`;
+    }
+  
+    setInterval(nextSlide, 3000); // Troca a imagem a cada 3 segundos
+  });
+  
+
+
