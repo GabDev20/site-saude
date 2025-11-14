@@ -43,17 +43,23 @@ document.addEventListener("DOMContentLoaded", function () {
     const slides = document.querySelectorAll(".carousel-slide");
     const container = document.querySelector(".carousel-container");
     let index = 0;
-  
-    function nextSlide() {
-      index++;
-      if (index >= slides.length) {
-        index = 0;
-      }
-      container.style.transform = `translateX(-${index * 100}%)`;
+
+    function updateSlide() {
+        container.style.transform = `translateX(-${index * 100}%)`;
     }
-  
-    setInterval(nextSlide, 3000); // Troca a imagem a cada 3 segundos
-  });
+
+    document.getElementById("next").addEventListener("click", () => {
+        index++;
+        if (index >= slides.length) index = 0;
+        updateSlide();
+    });
+
+    document.getElementById("prev").addEventListener("click", () => {
+        index--;
+        if (index < 0) index = slides.length - 1;
+        updateSlide();
+    });
+});
   
 
 

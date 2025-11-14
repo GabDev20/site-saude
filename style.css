@@ -122,6 +122,66 @@ i {
   z-index: 2;
 }
 
+/* Botões pequenos e elegantes */
+.carousel-btn.small {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 20;
+  transition: 0.25s ease-in-out;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+}
+
+/* Flechas */
+.carousel-btn.small .arrow {
+  font-size: 18px;
+  color: #fff;
+  line-height: 0;
+  font-weight: 300;
+}
+
+/* Posicionamento */
+.carousel-btn.small.prev {
+  left: 12px;
+}
+
+.carousel-btn.small.next {
+  right: 12px;
+}
+
+/* Efeito hover */
+.carousel-btn.small:hover {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* Responsivo — diminui ainda mais no celular */
+@media (max-width: 600px) {
+  .carousel-btn.small {
+    width: 28px;
+    height: 28px;
+  }
+  .carousel-btn.small .arrow {
+    font-size: 15px;
+  }
+}
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
 .carousel-text h1 {
   font-size: 46px;
   margin-bottom: 10px;
