@@ -198,7 +198,7 @@ i {
   font-size: 16px;
   font-weight: bold;
   color: white;
-  background-color: #05ac63;
+  background-color: #05ac65;
   border-radius: 5px;
   text-decoration: none;
   margin-top: 20px;
@@ -206,7 +206,7 @@ i {
 }
 
 .banner-button:hover {
-  background-color: rgb(3.5593220339, 122.4406779661, 70.4745762712);
+  background-color: rgb(3.5593220339, 122.4406779661, 71.8983050847);
 }
 
 .carousel-slide {
@@ -274,27 +274,9 @@ i {
     height: 75vh;
   }
 }
-.top-bar {
-  background-color: #2A4D3F;
-  color: #fff;
-  text-align: center;
-  font-size: 14px;
-  padding: 5px 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
-@media screen and (max-width: 768px) {
-  .top-bar { /* Se a barra estiver dentro de um elemento chamado .top-bar */
-    display: none; /* Esconde no mobile */
-  }
-}
 .navbar {
   position: fixed;
-  top: 25px;
+  top: 0;
   left: 0;
   width: 100%;
   height: 80px;
@@ -305,7 +287,6 @@ i {
   padding: 0 40px;
   z-index: 1000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 999;
 }
 
 .container {
@@ -314,7 +295,6 @@ i {
   justify-content: space-between;
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
 }
 
 .logo {
@@ -365,9 +345,14 @@ i {
   background-color: #1f3a2c;
 }
 
+body {
+  margin: 0;
+  padding-top: 20px;
+}
+
 .hero, .services-page {
   position: relative;
-  margin-top: -70px;
+  margin-top: 0;
 }
 
 .menu-toggle {

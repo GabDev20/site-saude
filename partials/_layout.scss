@@ -125,7 +125,7 @@
     font-size: 16px;
     font-weight: bold;
     color: white;
-    background-color: $green-normal; 
+    background-color: #05ac65 ; 
     border-radius: 5px; 
     text-decoration: none; 
     margin-top: 20px; 
@@ -133,7 +133,7 @@
   }
   
   .banner-button:hover {
-    background-color: darken($green-normal, 10%); 
+    background-color: darken(#05ac65, 10%); 
   }
   
   
@@ -212,46 +212,24 @@
   }
   
   
-  
-//---------------------------------------------
 
-//Barra Superior
-.top-bar {
-    background-color: #2A4D3F; 
-    color: #fff;
-    text-align: center;
-    font-size: 14px;
-    padding: 5px 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-  }
-
-  @media screen and (max-width: 768px) {
-    .top-bar { /* Se a barra estiver dentro de um elemento chamado .top-bar */
-      display: none; /* Esconde no mobile */
-    }
-  }
-  
 
 //navbar----------------------
 
 .navbar {
     position: fixed;
-    top: 25px;
+    top: 0;
     left: 0;
     width: 100%;
     height: 80px;
-    background: $white-normal; 
+    background: #ffffff; 
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 40px;
     z-index: 1000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 999;
+
 }
 
 .container{
@@ -260,7 +238,7 @@
   justify-content: space-between;
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  
 }
 
 .logo {
@@ -310,11 +288,14 @@
   .btn-cta:hover {
     background-color: #1f3a2c;
   }
-
+body{
+    margin: 0;
+    padding-top: 20px;
+}
 
 .hero, .services-page{
     position: relative;
-    margin-top: -70px;
+    margin-top: 0;
 }
 
 
